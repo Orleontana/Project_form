@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <meta charset="UTF-8"/>
+      <title>Form</title>
+      <link rel="stylesheet" type="text/css" href="reset.css" />
+      <link rel="stylesheet" type="text/css" href="styles.css" />
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+      <div class="principal-block">
+        <div class="form-block">
+            <div class="image"></div>
+            <div class="registration-block">
+                <h1>Регистрация</h1>
+                <form action="https://www.bit-by-bit.ru/form-submit">
+                  <div class="input_first-group">
+                    <div>
+                      <label for="name">Имя</label>
+                      <input type="text" id="name" name="firstName" class="input-item_first-group" />
+                    </div>
+
+                    <div>
+                      <label for="lastname">Фамилия</label>
+                      <input type="text" id="lastname" name="lasttName" class="input-item_first-group" />
+                    </div>
+                    
+                    <div>
+                      <label for="email">Email</label>
+                      <input type="text" id="email" name="Email" class="input-item_first-group" />
+                    </div>
+
+                    <div>
+                      <label for="telephone">Телефон</label>
+                      <input type="text" id="telephone" name="Telephone" class="input-item_first-group" />
+                    </div>
+
+                  </div>
+                </form>
+
+                <h2>Адрес доставки</h2>
+                <form action="https://www.bit-by-bit.ru/form-submit">
+                <div class="input_second-group">
+                    <div>
+                      <label for="country-option">Страна</label>
+                      <select id="country-option" name="country" class="input-item_second-group">
+                        <option value="1">Россия</option>
+                        <option value="2">Беларусь</option>
+                        <option value="3">Казахстан</option>
+                        <option value="4">Польша</option>
+                      </select>
+                    </div>
+                    
+                    <div>
+                      <label for="city">Город</label>
+                      <input type="text" id="city" name="city" class="input-item_second-group" />
+                    </div>
+
+                    <div>
+                      <label for="index">Индекс</label>
+                      <input type="text" id="index" name="index" class="input-item_second-group" />
+                    </div>
+
+                    <div id="address-item">
+                      <label for="address">Адрес доставки (улица, дом, квартира)</label>
+                      <input type="text" id="address" name="address" />
+                    </div>
+                </div>
+                </form>
+
+                <h2>Уведомлять об акциях и скидках</h2>
+                <p>Мы не будем отправлять спам, но напишем, когда поступят новые товары или будет большая распродажа.</p>
+                <form action="https://www.bit-by-bit.ru/form-submit">
+                  <div class="input_third-group">
+                    <div class="checkbox">
+                      <input type="checkbox" id="contactChoice1" name="contacts" value="email" class="checkbox-contacts" />
+                      <label for="contactChoice1">По Email</label>
+                    </div>
+
+                    <div class="checkbox">
+                      <input type="checkbox" id="contactChoice2" name="contacts" value="sms" class="checkbox-contacts" />
+                      <label for="contactChoice2">По SMS</label>
+                    </div>
+
+                    <div class="checkbox">
+                      <input type="checkbox" id="contactChoice3" name="contacts" value="push" class="checkbox-contacts" />
+                      <label for="contactChoice3">Push-уведомления в приложении</label>
+                    </div>
+                  </div>
+                </form>
+
+                <form action="https://www.bit-by-bit.ru/form-submit">
+                  <button type="submit">Создать аккаунт</button>
+                </form>
+            </div>
+        </div>
+      </div>
+    </body>
+</html>

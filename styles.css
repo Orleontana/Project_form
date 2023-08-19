@@ -32,6 +32,13 @@
 
 }
 
+html {
+    --primary-color: #0284c7;
+    --secondary-color: #0ea5e9;
+    --third-color: #e5e5e5;
+    --fourth-color: #d4d4d4;
+}
+
 h1 {
     font-size: 24px;
     color: #0284c7;
@@ -54,7 +61,7 @@ input {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid var(--third-color);
     box-sizing: border-box;
     padding-bottom: 15px;
 
@@ -64,7 +71,7 @@ input {
     width: 235px;
     height: 35px;
     border-radius: 5px;
-    border: 1px solid #d4d4d4;
+    border: 1px solid var(--fourth-color);
 }
 
 label {
@@ -87,7 +94,7 @@ h2 {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid var(--third-color);
     box-sizing: border-box;
     padding: 30px 0 15px;
 }
@@ -96,7 +103,7 @@ h2 {
     width: 155px;
     height: 35px;
     border-radius: 5px;
-    border: 1px solid #d4d4d4;
+    border: 1px solid var(--fourth-color);
     box-sizing: border-box;
 }
 
@@ -104,7 +111,7 @@ h2 {
     width: 500px;
     height: 35px;
     border-radius: 5px;
-    border: 1px solid #d4d4d4;
+    border: 1px solid var(--fourth-color);
     box-sizing: border-box;
 }
 
@@ -120,7 +127,7 @@ p {
 }
 
 .input_third-group {
-    border-bottom: 1px solid #e5e5e5;
+    border-bottom: 1px solid var(--third-color);
     box-sizing: border-box;
     padding: 35px 0 15px;
 }
@@ -133,13 +140,13 @@ p {
 
 .checkbox-contacts {
     appearance: none;
-    border: 1px solid #d4d4d4;
+    border: 1px solid var(--fourth-color);
     width: 15px;
     height: 15px;
 }
 
 .checkbox-contacts:checked {
-    background-color: #0284c7;
+    background-color: var(--primary-color);
     background-image: url("326572_check_icon.png");
     background-position: center;
     background-size: contain;
@@ -148,8 +155,8 @@ p {
 button {
     width: 500px;
     height: 40px;
-    background-color: #0ea5e9;
-    border: 1px solid #0ea5e9;
+    background-color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
     box-sizing: border-box;
     border-radius: 5px;
     font-family: "Roboto", sans-serif;
@@ -160,7 +167,7 @@ button {
 }
 
 button:hover {
-    background-color: #0284c7;
-    border: 1px solid #0284c7;
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
     box-sizing: border-box;
 }

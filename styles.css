@@ -9,12 +9,13 @@
 
 .form-block {
     width: 1024px;
-    border: 2px solid red;
+    /*border: 2px solid red;*/
     box-sizing: border-box;
     margin: 0 auto;
     background-color: white;
     border-radius: 20px;
     display: flex;
+    box-shadow: 3px 3px 7px #d4d4d4;
 }
 
 .image {
@@ -39,6 +40,7 @@ html {
     --fourth-color: #d4d4d4;
 }
 
+
 h1 {
     font-size: 24px;
     color: #0284c7;
@@ -55,6 +57,14 @@ label {
 input {
     margin-bottom: 20px;
   }
+
+input:focus {
+    outline-color: var(--primary-color);
+}
+
+#country-option:focus {
+    outline-color: var(--primary-color);
+}
 
 .input_first-group {
     display: flex;

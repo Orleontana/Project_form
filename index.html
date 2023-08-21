@@ -13,7 +13,7 @@
     <body>
       <div class="principal-block">
         <div class="form-block">
-            <div class="image"></div>
+            <img src="mountains-1.jpg" class="image" />
             <div class="registration-block">
                 <h1>Регистрация</h1>
                 <form action="https://www.bit-by-bit.ru/form-submit">
@@ -39,18 +39,16 @@
                     </div>
 
                   </div>
-                </form>
 
                 <h2>Адрес доставки</h2>
-                <form action="https://www.bit-by-bit.ru/form-submit">
                 <div class="input_second-group">
                     <div>
                       <label for="country-option">Страна</label>
                       <select id="country-option" name="country" class="input-item_second-group">
-                        <option value="1">Россия</option>
-                        <option value="2">Беларусь</option>
-                        <option value="3">Казахстан</option>
-                        <option value="4">Польша</option>
+                        <option value="Russia">Россия</option>
+                        <option value="Belarus">Беларусь</option>
+                        <option value="Kazakhstan">Казахстан</option>
+                        <option value="Polsha">Польша</option>
                       </select>
                     </div>
                     
@@ -69,30 +67,26 @@
                       <input type="text" id="address" name="address" />
                     </div>
                 </div>
-                </form>
 
                 <h2>Уведомлять об акциях и скидках</h2>
                 <p>Мы не будем отправлять спам, но напишем, когда поступят новые товары или будет большая распродажа.</p>
-                <form action="https://www.bit-by-bit.ru/form-submit">
                   <div class="input_third-group">
                     <div class="checkbox">
                       <input type="checkbox" id="contactChoice1" name="contacts" value="email" class="checkbox-contacts" />
-                      <label for="contactChoice1">По Email</label>
+                      <label for="contactChoice1" class="label_checkbox">По Email</label>
                     </div>
 
                     <div class="checkbox">
                       <input type="checkbox" id="contactChoice2" name="contacts" value="sms" class="checkbox-contacts" />
-                      <label for="contactChoice2">По SMS</label>
+                      <label for="contactChoice2" class="label_checkbox">По SMS</label>
                     </div>
 
                     <div class="checkbox">
                       <input type="checkbox" id="contactChoice3" name="contacts" value="push" class="checkbox-contacts" />
-                      <label for="contactChoice3">Push-уведомления в приложении</label>
+                      <label for="contactChoice3" class="label_checkbox">Push-уведомления в приложении</label>
                     </div>
                   </div>
-                </form>
 
-                <form action="https://www.bit-by-bit.ru/form-submit">
                   <button type="submit">Создать аккаунт</button>
                 </form>
             </div>
